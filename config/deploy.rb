@@ -23,6 +23,9 @@ set :log_level, :debug
 # Default value for :pty is false
 set :pty, false
 
+set :stages, ["development", "staging", "production"]
+set :default_stage, "development"
+
 # Default value for :linked_files is []
 # set :linked_files, %w{config/database.yml}
 
@@ -33,7 +36,7 @@ set :pty, false
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
 
 namespace :deploy do
 
