@@ -19,7 +19,7 @@
 server 'dash-dev.cdlib.org', user: 'dash', roles: %w{web app}
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/apps/apache/htdocs/dash-dev.cdlib.org'
+set :deploy_to, '/apps/dash/apache/htdocs/dash.cdlib.org'
 
 # Custom SSH Options
 # ==================
