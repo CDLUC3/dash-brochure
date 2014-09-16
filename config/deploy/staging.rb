@@ -16,10 +16,10 @@
 # used to set extended properties on the server.
 
 # server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
-server 'dash-dev.cdlib.org', user: 'dash', roles: %w{web app}
+server 'dash-stg.cdlib.org', user: 'dash', roles: %w{web app}
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/apps/apache/htdocs/dash-dev.cdlib.org'
+set :deploy_to, '/apps/dash/apache/htdocs/dash-stg.cdlib.org'
 
 # Custom SSH Options
 # ==================
