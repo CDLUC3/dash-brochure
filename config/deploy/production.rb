@@ -21,6 +21,7 @@ server 'dash.cdlib.org', user: 'dash', roles: %w{web app}
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/apps/dash/apache/htdocs/dash.cdlib.org'
 
+
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
