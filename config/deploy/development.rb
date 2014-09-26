@@ -15,26 +15,12 @@
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-set :rails_env, "development" 
-
-# Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/apps/dash/apps/dash-ingest'
-
-
-#set :server_name, "dash-dev.cdlib.org"
-#set :server_name, "dash-dev2.cdlib.org"
-#set :default_server, "dash-dev2.cdlib.org"
-
+# server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
 server 'dash-dev2.cdlib.org',user: 'dash', roles: %w{web app}, :primary => true
 server 'dash-dev.cdlib.org', user: 'dash', roles: %w{web app}, my_property: :my_value
-
-#server 'dash-dev.cdlib.org', user: 'dash', roles: %w{web app}, my_property: :my_value
-
-
-
-set :unicorn_pid, "#{deploy_to}/unicorn.pid"
-set :unicorn_config, "#{deploy_to}/current/config/unicorn.rb"
-set :unicorn_port, "8080"
+# Default deploy_to directory is /var/www/my_app
+set :deploy_to, '/apps/dash/apache/htdocs/dash-dev2.cdlib.org'
+# set :deploy_to, '/tmp/brochure-test'
 
 # Custom SSH Options
 # ==================
@@ -61,3 +47,4 @@ set :unicorn_port, "8080"
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+
