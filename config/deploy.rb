@@ -1,4 +1,3 @@
-
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
@@ -8,14 +7,12 @@ set :repo_url, 'git@github.com:CDLUC3/dash-brochure.git'
 # Default branch is :master
 # set :branch, 'master'
 
-set :branch, ENV['BRANCH'] || 'master'
+set :branch, 'master'
 
-set :branch, 'brochure'
-set :filter, :branches => %w{brochure}
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/apps/dash/apache/htdocs/dash-dev2.cdlib.org'
+set :deploy_to, '/apps/dash/apps/apache/htdocs/dash-dev.cdlib.org'
 # set :deploy_to, '/tmp/brochure-test'
 
 # Default value for :scm is :git
@@ -32,14 +29,6 @@ set :pty, false
 
 set :stages, ["development", "staging", "production"]
 set :default_stage, "development"
-
-
-#set :server_name, "dash-dev2.cdlib.org"   # uncomment this line to deploy by default on this server
-#set :server_name, ["dash-dev2.cdlib.org","dash-dev.cdlib.org"] # uncomment this line to deploy on multiple server at atime
-
-#set :filter, :hosts => %w{dash-dev.cdlib.org,dash-dev2.cdlib.org}
-
-
 
 # Default value for :linked_files is []
 # set :linked_files, %w{config/database.yml}
