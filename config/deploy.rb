@@ -14,7 +14,7 @@ set :filter, :branches => %w{brochure}
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/apps/dash/apps/apache/htdocs/dash-dev.cdlib.org'
+set :deploy_to, '/apps/dash/apps/apache/htdocs/dash-dev2.cdlib.org'
 # set :deploy_to, '/tmp/brochure-test'
 
 # Default value for :scm is :git
