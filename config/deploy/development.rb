@@ -16,6 +16,7 @@
 # used to set extended properties on the server.
 
 # server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
+server 'dash-dev2.cdlib.org',user: 'dash', roles: %w{web app}, :primary => true
 server 'dash-dev.cdlib.org', user: 'dash', roles: %w{web app}
 
 # Default deploy_to directory is /var/www/my_app
