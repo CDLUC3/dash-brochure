@@ -37,7 +37,7 @@ set :default_stage, "development"
 #set :server_name, "dash-dev2.cdlib.org"   # uncomment this line to deploy by default on this server
 #set :server_name, ["dash-dev2.cdlib.org","dash-dev.cdlib.org"] # uncomment this line to deploy on multiple server at atime
 
-set :filter, :hosts => %w{dash-dev.cdlib.org,dash-dev2.cdlib.org}
+#set :filter, :hosts => %w{dash-dev.cdlib.org,dash-dev2.cdlib.org}
 
 
 
