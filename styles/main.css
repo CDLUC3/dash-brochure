@@ -4578,3 +4578,14 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+[class^="col"] {
+  border: 1px solid red;
+  background: #eee;
+  padding-top: 10px;
+  padding-bottom: 10px; }

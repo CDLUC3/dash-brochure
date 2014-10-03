@@ -1,5 +1,7 @@
-// ##### This gets compiled to main.css ##### //
+// ##### These styles get compiled to main.css ##### //
 
-@import "bootstrap";
+@import "bootstrap-imports";
+
+@import "bootstrap-variables";
 
 @import "custom";
