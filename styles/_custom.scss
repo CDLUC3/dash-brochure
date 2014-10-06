@@ -8,13 +8,13 @@
 
 [class^="col"] { // highlight all grid columns
     border: 1px solid red;
-    background: #F4F4F4;
+    background: #EFEFEF;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 h2 {
-	color: #F8991D;
+	color: #F8991D; // orange color in dash logo
 }
 
 .btn-default { // bootstrap v.2.3.2
@@ -25,4 +25,8 @@ h2 {
 	background-image: none;
 	background-color: #E6E6E6;
 	border-color: #ccc;
+}
+
+ul {
+	@extend .list-unstyled; // Bootstrap CSS
 }
