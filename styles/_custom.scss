@@ -8,7 +8,17 @@
 
 [class^="col"] { // highlight all grid columns
     border: 1px solid red;
-    background: #eee;
+    background: #F4F4F4;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.btn-default {
+	background-image: linear-gradient(to bottom, #FFF, #E6E6E6);
+}
+
+.btn-default:hover {
+	background-image: none;
+	background-color: #E6E6E6;
+	border-color: #ccc;
 }
