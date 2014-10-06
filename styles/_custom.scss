@@ -13,11 +13,15 @@
     padding-bottom: 10px;
 }
 
+.container {
+	background: #EFEFEF;
+}
+
 h2 {
 	color: #F8991D; // orange color in dash logo
 }
 
-.btn-default { // bootstrap v.2.3.2
+.btn-default { // Bootstrap v.2.3.2
 	background-image: linear-gradient(to bottom, #FFF, #E6E6E6);
 }
 
@@ -29,4 +33,37 @@ h2 {
 
 ul {
 	@extend .list-unstyled; // Bootstrap CSS
+}
+
+footer {
+	background: #fff;
+}
+
+.footer__logo--cdl {
+	display: block;
+	float: left;
+}
+
+.footer__text--cdl {
+	display: block;
+	float: left;
+	width: 490px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+}
+
+.footer__logo__uc3 {
+	display: block;
+	float: left;
+}
+
+.footer__text--uc3 {
+	display: block;
+	float: left;
+	width: 260px;
+	text-align: right;
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
 }
