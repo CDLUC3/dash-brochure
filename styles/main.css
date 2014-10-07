@@ -1202,10 +1202,10 @@ pre {
       width: 750px; } }
   @media (min-width: 992px) {
     .container {
-      width: 950px; } }
+      width: 970px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 950px; } }
+      width: 1170px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -4584,19 +4584,27 @@ button.close {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
-[class^="col"] {
-  border: 1px solid red;
-  background: #EFEFEF;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
 .container {
+  width: 950px;
   background: #EFEFEF; }
+
+header {
+  padding-top: 20px; }
+
+.section__explore {
+  padding-left: 50px; }
+
+.section__visit {
+  padding-right: 50px; }
 
 h2 {
   color: #F8991D; }
 
+.campus__buttons {
+  margin: 15px 0 15px -15px; }
+
 .btn-default {
+  font-size: 0.8em;
   background-image: linear-gradient(to bottom, #FFF, #E6E6E6); }
 
 .btn-default:hover {
@@ -4605,6 +4613,8 @@ h2 {
   border-color: #ccc; }
 
 footer {
+  margin-top: 30px;
+  padding-top: 15px;
   background: #fff; }
 
 .footer__logo--cdl {
@@ -4626,8 +4636,11 @@ footer {
 .footer__text--uc3 {
   display: block;
   float: left;
-  width: 260px;
+  width: 270px;
   text-align: right;
-  margin-right: 10px;
+  margin-right: 5px;
   padding-right: 10px;
   border-right: 1px solid #ccc; }
+
+footer a {
+  color: #0066FF; }
