@@ -4598,6 +4598,9 @@ header {
 .section__visit {
   padding-right: 50px; }
 
+h1 {
+  margin: 1em 0 1.5em 0; }
+
 h2 {
   color: #F8991D; }
 
