@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:CDLUC3/dash-brochure.git'
 # Default branch is :master
 # set :branch, 'master'
 
-set :branch, 'master'
+set :branch, 'development'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
