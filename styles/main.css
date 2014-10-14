@@ -4586,6 +4586,7 @@ button.close {
 
 .container {
   width: 950px;
+  margin-top: 50px;
   background: #EFEFEF; }
 
 header {
