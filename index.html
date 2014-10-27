@@ -1,132 +1,91 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Dash: Data submission</title>
+  <link rel="stylesheet" href="/styles/main.css">
 
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-
-  <link href="/stylesheets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/jquery.fileupload-ui.css?body=1" media="all" rel="stylesheet"
-        type="text/css" />
-  <link href="/stylesheets/bootstrap_and_overrides.css?body=1" media="all" rel="stylesheet"
-        type="text/css" />
-  <link href="/stylesheets/creators.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/datauploads.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/login.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/record.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/styles.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/styles.css.bak?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/styles_ie7.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/styles_ie8.css?body=1" media="all" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/uploads.css?body=1" media="all" rel="stylesheet" type="text/css" />
-
-  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="authenticity_token" name="csrf-param">
   <meta content="O73p0Q4IcsX7VO0WSGT0JLCVcHzXiyIZZLv9jZcoeqU=" name=
-  "csrf-token" />
+  "csrf-token">
 </head>
 
 <body>
-  <div id="my-datasets-page">
-    <!-- begin outer container -->
+  
+  <div class="container">
+    
+  <header class="row">
 
-    <div id="outer-container">
-      <!-- begin inner container -->
+    <div class="col-xs-12 col-sm-12 text-center">
+      <img src="/img/dash_cdl_logo.png" alt="Dash, data sharing made easy, University of California">
+      <h1>Describe, manage, and share your research data</h1>
+    </div>
 
-      <div id="inner-container">
-        <!-- begin header -->
+  </header>
 
-        <div id="header">
-          <div id="logo">
-            <a href="/"><img alt= "Dash: Open data for the global research community"
-               src="/images/dash_cdl_logo.png" title= "Dash: Open data for the global research community" />
-             </a>
-          </div>
+  <div class="row">
+
+    <section class="col-xs-12 col-sm-6 section__explore">
+      <h2>Explore Dash</h2>
+      <ul>
+        <li><a href="http://dash-dev.ucop.edu/xtf/search?browse-all=yes">Find data</a></li>
+        <li><a href="http://dash-dev.ucop.edu/xtf/search?smode=aboutPage">Learn more about Dash</a></li>
+        <li><a href="https://dash-dev.ucop.edu/xtf/search?smode=faqPage">Read FAQ</a></li>
+        <li><a href="http://cdluc3.github.io/dash">Visit Dash on GitHub</a></li>
+      </ul>
+      <h2>Not part of the UC community?</h2>
+      <ul>
+        <li><a href="http://oneshare2-dev.cdlib.org">Go to DataONE Dash</a></li>
+      </ul>
+    </section>
+    <section class="col-xs-12 col-sm-6 section__visit">
+      <h2>Visit UC Dash Sites</h2>
+      <p>Find and share data from your UC Campus</p>
+      <div class="row campus__buttons">
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-default btn-block" href="http://dash-dev.berkeley.edu/">UC Berkeley</a>
         </div>
-
-        <div id="navbar">
-
-          <nav>
-            <ul>
-              <li><a href="http://dash-dev.ucop.edu/xtf/search?smode=aboutPage">About</a></li>
-              <li><a href="http://dash-dev.ucop.edu/xtf/search?browse-all=yes">Search Data</a></li>
-              <li><a href="http://dash-dev.ucop.edu/xtf/search?smode=stepsPage">Share Data</a></li>
-              <li><a href="http://dash-dev.ucop.edu/records.html">My Datasets</a></li>
-            </ul>
-          </nav>
-
-          <div id="project_links">
-          </div>
-
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-default btn-block" href="http://dash-dev.lib.uci.edu/">UC Irvine</a>
         </div>
+      </div>
+      <div class="row campus__buttons">
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-default btn-block" href="http://dev.dash.ucla.edu/">UCLA</a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-default btn-block" href="http://dash-dev.ucmerced.edu/">UC Merced</a>
+        </div>
+      </div>
+      <div class="row campus__buttons">
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-default btn-block" href="http://dash-dev.ucop.edu/">UC Office of the President</a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a class="btn btn-default btn-block" href="http://datashare-dev.ucsf.edu/">UCSF DataShare</a>
+        </div>
+      </div>
+    <p>Don't see your UC campus? They are not currently participating. <a href="http://dash-dev.ucop.edu/contact">Contact us</a> for more information.</p>
+    </section>
 
-        <div id="content">
-          <div id="banner"><img src="/images/banner-home-v8.0.jpg" width="952" alt="Publish and Download Research Datasets" />
-          </div>
+  </div>
 
-          <div class="single-column">
-            <h1>Click <a href="http://dash-dev.ucop.edu/xtf/search?browse-all=yes">here</a> to browse all Dash data</h1>
-            <h1> Or go to your Campus' Dash home page</h1>
-            <p>
-            <ul>
-            <li> <a href="http://dash-dev.berkeley.edu">UC Berkeley</a></li>
-            <li> <a href="http://dash-dev.lib.uci.edu">UC Irvine</a></li>
-            <li> <a href="http://dev.dash.ucla.edu">UCLA</a></li>
-            <li> <a href="http://dash-dev.ucmerced.edu">UC Merced</a></li>
-            <li> <a href="http://dash-dev.ucop.edu">UC Office of the President</a></li>
-            <li> <a href="http://datashare.ucsf.edu">UCSF DataShare</a></li>
-            </p>
-          </div>  <!-- end single-column -->
-          
-          <div class="brochure-message">
-            <p style="line-height:30%;">Don't see your UC campus? They are not currently participating.</p>
-            <p style="line-height:30%;"><a href="/contact">Contact us</a> for more information.</p>
-          </div>
-          
-        
-        </div>    <!-- end content -->
+  <footer class="row">
 
-        <div id="footer">
-          <div id="footer-container" class="shading">
-            <div id="terms">
-              <a href="http://www.cdlib.org/about/terms.html">Terms of Use</a>
-            </div>
+    <div class="col-xs-12 col-sm-12">
 
-            <div id="faq-footer">
-              <a href="https://dash-dev.ucop.edu/xtf/search?smode=faqPage" title=
-              "Frequently Asked Questions">FAQ</a>
-            </div>
+      <a href="http://www.cdlib.org/"><img class="footer__logo--cdl" src="/img/cdl-logo.jpg" alt="CDL logo"></a>
+      <small class="footer__text--cdl">Dash is a service of the <a href="http://www.cdlib.org/uc3/">University of California Curation Center of the California Digital Library</a>. Copyright &#169; 2014 The Regents of the University of California</small>
 
-            <div id="policies">
-              <a href="https://dash-dev.ucop.edu/xtf/search?smode=policiesPage">Policies</a>
-            </div>
+      <small class="footer__text--uc3">Dash is a collaborative project between the <br><a href="http://libraries.universityofcalifornia.edu">UC Libraries</a> and the <a href="http://cdlib.org/uc3">UC Curation Center</a>.</small>
+      <a href="http://lib.berkeley.edu/"><img class="footer__logo__uc3" src="/img/uc3.png" alt="UC3 logo"></a>
 
-            <div id="contact-us">
-              <a href="http://dash-dev.ucop.edu/contact">Contact Us</a>
-            </div>
-          </div>
-        </div>  <!-- end footer -->
+    </div>
 
-        <div id="footer-logos">
-          <div id="cdl-logo-sm">
-            <a href="http://www.cdlib.org/"><img src="/images/cdl-logo.jpg"
-            width="72" height="26" alt="California Digital Library" title=
-            "California Digital Library" /></a>
-          </div>
+  </footer>
 
-          <div id="cdl-logo-text">
-            Dash is a service of the <a href="http://www.cdlib.org/uc3/">University of California Curation Center of the California Digital Library</a>. <br>Copyright &#169; 2014 The Regents of the University of California
-          </div>
+  </div>
 
-          <div id="local-lib-sm">
-            <a href="http://lib.berkeley.edu/"><img src="/images/uc3.png"
-               width="72" alt="UC Curation Center" title="UC Curation Center" /></a>
-          </div>
-
-          <div id="local-lib-text">
-            Dash is a collaborative project between the <br><a href="http://libraries.universityofcalifornia.edu">UC Libraries</a> and the <a href="http://cdlib.org/uc3">UC Curation Center</a>.
-          </div>
-        </div>  <!-- end footer logos  -->
-      </div>    <!-- end inner container -->
-    </div>      <!-- end outer container -->
-  </div>        <!-- end page -->
 </body>
+
 </html>

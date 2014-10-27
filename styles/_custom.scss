@@ -1,0 +1,98 @@
+// ##### Custom Styles ##### //
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+}
+
+[class^="col"] { // highlight all grid columns
+    // border: 1px solid red;
+    // background: #EFEFEF;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+}
+
+.container {
+	width: 950px;
+	margin-top: 50px;
+	background: #EFEFEF;
+}
+
+header {
+	padding-top: 20px;
+}
+
+.section__explore {
+	padding-left: 50px;
+}
+
+.section__visit {
+	padding-right: 50px;
+}
+
+h1 {
+	margin: 1em 0 1.5em 0;
+}
+
+h2 {
+	color: #F8991D; // orange color in dash logo
+}
+
+.campus__buttons {
+	margin: 15px 0 15px -15px;
+}
+
+.btn-default {
+	font-size: 0.8em;
+	background-image: linear-gradient(to bottom, #FFF, #E6E6E6); // Bootstrap v.2.3.2
+}
+
+.btn-default:hover {
+	background-image: none;
+	background-color: #E6E6E6;
+	border-color: #ccc;
+}
+
+ul {
+	@extend .list-unstyled; // Bootstrap CSS
+}
+
+footer {
+	margin-top: 30px;
+	padding-top: 15px;
+	background: #fff;
+}
+
+.footer__logo--cdl {
+	display: block;
+	float: left;
+}
+
+.footer__text--cdl {
+	display: block;
+	float: left;
+	width: 490px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+}
+
+.footer__logo__uc3 {
+	display: block;
+	float: left;
+}
+
+.footer__text--uc3 {
+	display: block;
+	float: left;
+	width: 270px;
+	text-align: right;
+	margin-right: 5px;
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
+}
+
+footer a {
+	color: #0066FF;
+}
