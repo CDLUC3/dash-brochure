@@ -21,6 +21,3 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 3.2.1)
-
-BUNDLED WITH
-   1.10.2
